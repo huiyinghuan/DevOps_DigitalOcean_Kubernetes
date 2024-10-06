@@ -55,7 +55,7 @@ jobs:
       
       - name: Authenticate with DigitalOcean
         run: |
-          doctl auth init --access-token=$DO_TOKEN --interactive=false
+          doctl auth init --access-token $DO_TOKEN
         env:
           DIGITALOCEAN_ACCESS_TOKEN: ${{ secrets.DO_TOKEN }}
   
